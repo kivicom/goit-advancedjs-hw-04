@@ -1,18 +1,30 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import url('./utils/fonts.css');
+@import url('./utils/vars.css');
+@import url('./utils/reset.css');
+@import url('./components/gallery.css');
+@import url('./components/form.css');
+@import url('./components/loader.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.hide {
+    display: none;
+}
+
+.container {
+    min-width: 360px;
+    max-width: 375px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+}
