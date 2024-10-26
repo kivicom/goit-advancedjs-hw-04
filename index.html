@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image search</title>
+    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-BGz2EIcA.js">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/vendor-CWKLx11g.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-BT4RrTY5.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="search">
+          <form id="searchPhoto">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search images..."
+              name="q"
+            />
+            <button class="btn btn-search" type="submit">Search</button>
+          </form>
+        </div>
+
+        <ul class="gallery"></ul>
+
+        <div class="pagination">
+          <button class="btn btn-more loader-off" id="loadMore">
+            Load more
+          </button>
+          <span class="loader loader-off"></span>
+          <p class="end-message loader-off" id="endMessage">
+            We're sorry, but you've reached the end of search results.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
